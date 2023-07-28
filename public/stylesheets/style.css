@@ -37,6 +37,7 @@ body > main {
   background-color: #E8ECEB;
   padding: 20px;
   overflow-y: scroll;
+  background-image: url("https://www.eatingwell.com/thmb/tF-zyMkkMTLxAZ-pP8xLTfR0CSM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6613180-429decf9a3244a98b697754fa8b4912e.jpg");
 }
 
 body > main h1:first-child {
