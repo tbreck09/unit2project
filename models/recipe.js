@@ -7,6 +7,13 @@ const reviewSchema = new Schema({
       type: String,
       required: true
     },
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: 5
+    },
+    
     user: {
       type: Schema.Types.ObjectId,
       ref: 'User',
@@ -17,14 +24,14 @@ const reviewSchema = new Schema({
   }, {
     timestamps: true
   });
-  const recipeSchema = new Schema({
-    title: { type: String, required: true },
-    ingredients: { type: String, required: true },
-
-    reviews: [reviewSchema],
-    
-    timestamps: true
-  });
   
+  const recipeSchema = new Schema({
+    recipe: { type: String, required: true},
+    ingredients: { type: String, required: true},
+    reviews: [reviewSchema]
+  },{
+    timestamps: true
+  })
+
   // Compile the schema into a model and export it
   module.exports = mongoose.model('Recipe', recipeSchema);

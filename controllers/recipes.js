@@ -4,7 +4,8 @@ module.exports = {
   index,
   show,
   new: newRecipe,
-  create
+  create, 
+
 };
 
 async function index(req, res) {
