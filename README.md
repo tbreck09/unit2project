@@ -12,7 +12,7 @@ Recipes tracker that keeps track of all your favorite recipes!
 
 <h2>Technologies Used: Express, Node.js, MongoDB, Mongoose, HTML, CSS, and JavaScript.</h2>
 
-<h2>Website Link</h2>: https://morning-savannah-86742-68f7c3f71979.herokuapp.com/)https://morning-savannah-86742-68f7c3f71979.herokuapp.com/
+<h2>Website Link</h2>: https://morning-savannah-86742-68f7c3f71979.herokuapp.com/
 
 <h2>Icebox Items</h2>
 Add alot more styling and make the functionality better. I would also like to add different categories off food so you can find the food you want faster.
