@@ -1,17 +1,16 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-    <div><h3>Recipe: </div></h3>
-    <div><%= recipe.title %></div>
-    <div><h3>Indredients:</div></h3>
+    <div>Recipe: </div>
+    <div><%= recipe.name %></div>
+    <div>Indredients:</div>
     <div><%= recipe.ingredients %></div>
   </section>
-    </select>
   </form>
-    <br><br><h2>Reviews</h2>
+    <br><br><h2>Notes</h2>
   <form id="add-review-form" method="POST"
     action="/recipes/<%= recipe._id %>/reviews">
-    <label>Review:</label>
+    <label>Notes:</label>
     <textarea name="content"></textarea>
     <label>Rating:</label>
     <select name="rating">
@@ -21,7 +20,7 @@
       <option value="4">4</option>
       <option value="5" selected>5</option>
     </select>
-    <input type="submit" value="Add Review">
+    <input type="submit" value="Add Note">
   </form>
   
   <% if (recipe.reviews.length) { %>
@@ -30,7 +29,7 @@
         <tr>
           <th>User</th>
           <th>Date</th>
-          <th>Review</th>
+          <th>Note</th>
           <th>Rating</th>
           <th></th>
         </tr>
@@ -60,7 +59,7 @@
       </tbody>
     </table>
   <% } else { %>
-    <h5>No Reviews Yet</h5>
+    <h5>No Notes Yet</h5>
   <% } %>
     
     

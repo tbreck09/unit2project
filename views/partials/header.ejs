@@ -8,8 +8,9 @@
   <title><%= title %></title>
 </head>
 <body>
-  <nav>
-    <a href="/recipes" <%- title === 'All Recipes' ? 'class="active"' : '' %>>ALL RECIPES</a>
+    <nav>
+        <a class="home" href="/">Home
+        <a href="/recipes" <%- title === 'All Recipes' ? 'class="active"' : '' %>>ALL RECIPES</a>
     <% if (user) { %>
       <a href="/recipes/new" <%- title === 'Add Recipe' ? 'class="active"' : '' %>>ADD RECIPE</a>
       <a href="/logout">LOG OUT</a>

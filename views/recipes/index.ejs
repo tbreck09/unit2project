@@ -3,15 +3,15 @@
 <table id="list">
     <thead>
         <tr>
-            <th>Recipes</th>
+            <th>Recipe</th>
         </tr>
     </thead>
-    <tbody>
+    <tr>
         <% recipes.forEach(function(m){ %>
             <td><%= m.recipe %></td>
             <td><a href="/recipes/<%= m.id %>">DETAILS</a></td>
         </tr>
         <% }) %>
-    </tbody>
+    </tr>
 </table>
 <%- include('../partials/footer') %>
